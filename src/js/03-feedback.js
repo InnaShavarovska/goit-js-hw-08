@@ -16,6 +16,7 @@ localStorage.setItem(KEY, JSON.stringify(formData));
 };
 
 function onFormSubmit (event) {
+	console.log(JSON.parse(localStorage.getItem(KEY)));
 	event.preventDefault();
    event.currentTarget.reset();
 	localStorage.removeItem(KEY);
