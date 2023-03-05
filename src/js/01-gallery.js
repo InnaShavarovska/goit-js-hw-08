@@ -6,7 +6,7 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 
 function creatCardImagesMarkup (images) {
 	return images.map(({ preview, original, description }) => {
-	  return `<li>
+	  return `<div>
 	 <a class="gallery__item" href="${original}">
 	  <img
 		 class="gallery__image"
@@ -14,7 +14,7 @@ function creatCardImagesMarkup (images) {
 			alt="${description}"
 	  />
 	 </a>
-	</li>`
+	</div>`
 	 }).join('');
 	};
   
